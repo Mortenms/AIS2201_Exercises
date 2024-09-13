@@ -12,4 +12,5 @@ Xm = np.zeros(len(m_array))
 for m in m_array:
     Xm[m] = np.sum(x*np.e**(-2j*pi*m*n/N))
 
+
 plt.stem(m_array, np.abs(Xm))
